@@ -449,11 +449,11 @@ footer {
   }
 
   .book {
-    width: 25%;
+    width: 50%;
   }
 
-  .book {
-    flex-wrap: wrap;
+  #featured {
+    height: 1175px;
   }
 }
 
@@ -474,7 +474,6 @@ footer {
 
   .highlight {
     width: 100%;
-    margin-bottom: 24px;
   }
 
   .highlight:not(:last-child) {
@@ -484,5 +483,9 @@ footer {
   .highlight {
     display: flex;
     flex-direction: ap;
+  }
+
+  #featured {
+    height: 1125px;
   }
 }
