@@ -430,9 +430,29 @@ footer {
 
 -- BREAKPOINT --
 
-" Interduces the burger butten menu when screen size drops BELOW width:550px ALSO .book__img code added to make website more re"
-
 */
+
+/* SMALL PHONES, TABLETS, LRG SMARTPHONES */
+
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0 24px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .book {
+    width: 50%;
+  }
+}
+
+/* SMALL PHONES, LRG SMARTPHONES */
 
 @media (max-width: 550px) {
   .nav__link {
