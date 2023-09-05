@@ -187,7 +187,7 @@ header {
 }
 
 .header__img--wrapper {
-  padding-top: 100px;
+  padding: 125px 0;
   z-index: 2;
 }
 
@@ -276,6 +276,7 @@ HIGHLIGHTS
 
 .highlight__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .highlight {
@@ -283,7 +284,6 @@ HIGHLIGHTS
   width: calc(100% / 3);
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -308,6 +308,7 @@ HIGHLIGHTS
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /*
@@ -317,7 +318,7 @@ FEATURED
 */
 
 #featured {
-  height: 1000px;
+  height: 650px;
   background-color: rgba(115, 66, 214, 0.1);
 }
 
@@ -448,22 +449,40 @@ footer {
   }
 
   .book {
-    width: 50%;
+    width: 25%;
+  }
+
+  .book {
+    flex-wrap: wrap;
   }
 }
 
 /* SMALL PHONES, LRG SMARTPHONES */
 
 @media (max-width: 550px) {
-  .nav__link {
-    display: none;
-  }
-
   .btn__menu {
     display: block;
   }
 
+  .nav__link {
+    display: none;
+  }
+
   .book__img {
     padding: 0px 0px 0px 0px;
+  }
+
+  .highlight {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .highlight {
+    display: flex;
+    flex-direction: ap;
   }
 }
