@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libary</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="nav__container">
+          <a href="#">
+            <img
+              class="logo"
+              src="./Assets/FES Library - CSS/assets/Library.svg"
+              alt="Header Logo" />
+          </a>
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+            <li>
+              <a href="#featured" class="nav__link nav__link--primary">Books</a>
+            </li>
+          </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="#featured" class="menu__link" onclick="closeMenu()"
+                  >Books</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link no-cursor" onclick="closeMenu()"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1>UK's Most Award Winning Online Library Platform</h1>
+            <h2>
+              Find your dream book with <span class="purple">Library</span>
+            </h2>
+            <a href="#featured">
+              <button class="btn">Browse Books</button>
+            </a>
+          </div>
+          <figure class="header__img--wrapper">
+            <img
+              src="./Assets/FES Library - CSS/assets/Undraw_Books.svg"
+              alt="" />
+          </figure>
+        </div>
+      </header>
+    </section>
+    <main>
+      <section id="highlights">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Why choose <span class="purple">Library</span>
+            </h2>
+            <div class="highlight__wrapper">
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="highlight__subtitle">Easy & Quick</h3>
+                <p class="highlight__para">
+                  Get access to the book you purchased online instantly!
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="fas fa-book-open"></i>
+                </div>
+                <h3 class="highlight__subtitle">10,000+ Books</h3>
+                <p class="highlight__para">
+                  Library has books in all your favourite categories.
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="fas fa-tags"></i>
+                </div>
+                <h3 class="highlight__subtitle">Affordable</h3>
+                <p class="highlight__para">
+                  Get your hands on popular books for as little as £10!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Featured <span class="purple">Books</span>
+            </h2>
+            <div class="books">
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/david goggins.jpeg"
+                    alt="Book Cover: Can't Hurt Me image" />
+                </figure>
+                <div class="book__title">Can't Hurt Me</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/deep work.jpeg"
+                    alt="Book Cover: Deep Work image" />
+                </figure>
+                <div class="book__title">Deep Work</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/crack the coding interview.png"
+                    alt="Book Cover: Cracking The Coding Interview image" />
+                </figure>
+                <div class="book__title">Cracking The Coding Interview</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/atomic habits.jpg"
+                    alt="Book Cover: Atomic Habits" />
+                </figure>
+                <div class="book__title">Atomic Habits</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="latest">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Latest <span class="purple">Books</span>
+            </h2>
+            <div class="books">
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/book-1.jpeg"
+                    alt="Book Cover: The 10X Rule image" />
+                </figure>
+                <div class="book__title">The 10X Rule</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/deep work.jpeg"
+                    alt="Book Cover: Deep Work image" />
+                </figure>
+                <div class="book__title">Deep Work</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/book-2.jpeg"
+                    alt="Book Cover: Be Obesssed or Be Average image" />
+                </figure>
+                <div class="book__title">Be Obesssed or Be Average</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/book-3.jpeg"
+                    alt="Book Cover: Rich Dad Poor Dad image" />
+                </figure>
+                <div class="book__title">Rich Dad Poor Dad</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/book-5.jpeg"
+                    alt="Book Cover: 48 Laws of Power image" />
+                </figure>
+                <div class="book__title">48 Laws of Power</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/book-6.jpeg"
+                    alt="Book Cover: The 5 Second Rule image" />
+                </figure>
+                <div class="book__title">The 5 Second Rule</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/book-8.jpeg"
+                    alt="Book Cover: Mastery image" />
+                </figure>
+                <div class="book__title">Mastery</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./Assets/FES Library - CSS/assets/book-7.jpg"
+                    alt="Book Cover: Your Next Five Moves image" />
+                </figure>
+                <div class="book__title">Your Next Five Moves</div>
+                <div class="book_ratings">
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star" style="color: #fabf2a"></i>
+                  <i class="fas fa-star-half-alt" style="color: #fabf2a"></i>
+                </div>
+                <div class="book_price">
+                  <span class="book__price--normal">£29.99</span>£14.99
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="explore">
+        <div class="container">
+          <div class="row row__column">
+            <h2>Explore More <span class="purple">Books</span></h2>
+            <a href="#featured">
+              <button class="btn">Browse Books</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row row__column">
+        <div class="container">
+          <a href="#">
+            <figure class="footer__logo">
+              <img
+                src="./Assets/FES Library - CSS/assets/Library.svg"
+                class="footer__logo--img"
+                alt="Footer logo" />
+            </figure>
+          </a>
+          <div class="footer__list">
+            <a href="#" class="footer__link">Home</a>
+            <a href="#" class="footer__link no-cursor">About</a>
+            <a href="#featured" class="footer__link">Books</a>
+            <a href="#" class="footer__link no-cursor">Contact</a>
+          </div>
+          <div class="footer__copyright">Copyright © 2023 YoBello1</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
