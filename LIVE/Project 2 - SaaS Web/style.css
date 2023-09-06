@@ -179,6 +179,8 @@ INTRO / ROW
   border: none;
   letter-spacing: normal;
   line-height: 16px;
+  max-width: 161px;
+  max-height: 51.6px;
 }
 
 .TwoColumnWithInput__ActionBar {
@@ -191,4 +193,110 @@ INTRO / ROW
 
 .TwoColumnWithInput__RColumn {
   width: 60%;
+}
+
+/*
+
+FEATURES / SERVICE / PRDUCT LIST 
+
+*/
+
+.ThreeColumnContainer {
+  margin: 0px 9px;
+  padding: 96px 0px;
+}
+
+.ThreeColumnRow {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0% auto;
+}
+
+.Head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ThreeColumn__Subheading {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ThreeColumn__Heading {
+  text-align: center;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 1.2px;
+  font-weight: 900;
+}
+
+.ThreeColumn__Para {
+  text-align: center;
+  color: #7c8ba1;
+  font-size: 18px;
+  margin: 16px 0px 0px;
+  font-weight: 500;
+  height: 85px;
+  line-height: 29.25px;
+  max-width: 576px;
+  width: 100%;
+}
+
+.ThreeColumn__VerticalSpacer {
+  display: flex;
+  padding: 35px 0 0;
+}
+
+.ThreeColumnService {
+  display: flex;
+  width: calc(100% / 4);
+  margin: 0px 16px;
+  padding: 32px 8px;
+}
+
+.ThreeColumnDesc {
+  margin-top: 16px;
+  color: #7c8ba1;
+  font-size: 14px;
+  line-height: 32px;
+  height: 96px;
+  font-weight: 500;
+}
+
+.title {
+  color: black;
+  font-size: 24px;
+  margin: 16px 0 0;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+}
+
+.imageContainer {
+  border: 1px grey solid;
+  border-radius: 9999px;
+  padding: 20px;
+  max-height: 65.6px;
+  max-width: 65.6px;
+}
+
+.icon__img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.textContainer {
+  margin: 8px 0px 0px 16px;
 }
