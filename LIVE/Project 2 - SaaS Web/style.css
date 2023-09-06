@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
 
 * {
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Inter", system-ui;
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
@@ -11,4 +9,186 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.main1 {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding: 32px 32px;
+}
+
+/*
+
+NAV BAR
+
+*/
+
+li {
+  list-style-type: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  line-height: 24px;
+  height: 44px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.logo {
+  width: 40px;
+  margin: 0 12px 0 0;
+}
+
+.T_HeaderNLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #243e63;
+  margin: 0 24px 0 0;
+  padding: 0 0 4px;
+  text-size-adjust: 100%;
+  text-decoration-line: none;
+  font-weight: 900;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__link {
+  margin: 0px 24px;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(36, 62, 99);
+  font-weight: 600;
+  padding: 0 0 4px;
+}
+
+.btn--nav {
+  background-color: #6415ff;
+  color: white;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  letter-spacing: 0.35px;
+  line-height: 21px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+img {
+  max-width: 100%;
+}
+
+.purple {
+  color: #6415ff;
+}
+
+/* 
+
+INTRO / ROW
+
+*/
+
+/* Left To Right - 2 Columns */
+
+.TwoColumnWithInput__TwoColumn {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 96px 0px;
+}
+
+.TwoColumnWithInput__LColumn {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.TwoColumnWithInput__Heading {
+  font-size: 48px;
+  padding-top: 10px;
+}
+
+.TwoColumnWithInput__Paragraph {
+  font-size: 18px;
+  color: #243e63;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin: 32px 0px;
+  height: 72px;
+  line-height: 27px;
+}
+
+.TwoColumnWithInput__ClientStrip {
+  margin: 80px 0px 0px;
+}
+
+.CStrip {
+  margin: 16px 0px 0px;
+  padding: 0px 128px 0px 0px;
+  display: flex;
+  opacity: calc(50%);
+}
+
+.CTitle {
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 700;
+  height: 18px;
+  letter-spacing: 0.6px;
+  line-height: 18px;
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+}
+
+.btn--intro {
+  color: #fff;
+  background-color: #6415ff;
+  margin: 8px 8px 8px 0px;
+  padding: 16px 0px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 999px;
+  border: none;
+  letter-spacing: normal;
+  line-height: 16px;
+}
+
+.TwoColumnWithInput__ActionBar {
+  background-color: #fff;
+  padding: 20px 192px 20px 32px;
+  display: flex;
+}
+
+/* */
+
+.TwoColumnWithInput__RColumn {
+  width: 60%;
 }
